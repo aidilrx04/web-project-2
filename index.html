@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link
+      rel="stylesheet"
+      href="./assets/jquery-mobile/jquery.mobile-1.4.5.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+
+    <script src="./assets/jquery/jquery-1.11.1.min.js"></script>
+    <script src="./assets/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="./assets/js/carousel.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <button class="ui-btn-left ui-noboxshadow togglenav">
+          <i class="ph ph-list"></i>
+        </button>
+        <h1 class="ui-title">LIM</h1>
+        <button class="ui-btn-right">
+          <i class="ph ph-envelope"></i>
+        </button>
+      </div>
+      <div role="main" style="position: relative">
+        <div class="ll-navbar">
+          <div class="navbar-bg"></div>
+
+          <div class="navbar-content">
+            <div class="brand">
+              <img src="https://aidil.dev/favicon.ico" alt="" />
+              <span class="brand-name">Lim Botak</span>
+            </div>
+            <div class="navigation-menu">
+              <ul class="nav">
+                <li>
+                  <a href="index.html">
+                    <i class="ph ph-house"></i>
+                    <span> Home </span>
+                  </a>
+                </li>
+                <li>
+                  <div
+                    data-role="collapsible"
+                    data-collapsed="true"
+                    class="collapsible"
+                  >
+                    <h4>
+                      <div class="label">
+                        <i class="ph ph-map-trifold"></i>
+                        <span>Destination</span>
+                      </div>
+                      <span class="status-icon">
+                        <i class="ph ph-caret-down"></i>
+                      </span>
+                    </h4>
+                    <ul>
+                      <li>
+                        <a href="#destination1">
+                          <i class="ph ph-push-pin"></i>
+                          <span>Destionation 1</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#destination1">
+                          <i class="ph ph-push-pin"></i>
+                          <span>Destionation 1</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#destination1">
+                          <i class="ph ph-push-pin"></i>
+                          <span>Destionation 1</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#destination1">
+                          <i class="ph ph-push-pin"></i>
+                          <span>Destionation 1</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#about">
+                    <i class="ph ph-info"></i>
+                    <span>About Us</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact">
+                    <i class="ph ph-envelope"> </i>
+                    <span>Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(document).ready(function () {
+            const navbarDropdown = $(".ll-navbar .collapsible");
+
+            $(".togglenav").click(function () {
+              $(".ll-navbar").toggleClass("show");
+            });
+            $(".navbar-bg").click(function () {
+              $(".ll-navbar").toggleClass("show");
+            });
+          });
+        </script>
+        <div class="carousel">
+          <div class="carousel-container">
+            <div class="slide">Item 1</div>
+            <div class="slide">Item 2</div>
+            <div class="slide">Item 3</div>
+          </div>
+
+          <button class="prev">Preview</button>
+          <button class="next">Next</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
