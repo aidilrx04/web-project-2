@@ -1,0 +1,49 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  background-color: #D1D3C7;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 12pt;
+  font-family: "Spartan";
+  color: black;
+}
+body .content {
+  padding: 10px;
+  background-color: #E1E3D6;
+}
+body .content .header h1 {
+  padding: 15px;
+  text-align: center;
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+}
+body .content p {
+  padding-top: 40px;
+  text-align: justify;
+  font-size: 20px;
+}
+body .content .contact-detail {
+  padding-top: 20px;
+  padding: 20px;
+  border-top: 1px solid black;
+}
+body .content .contact-detail span {
+  display: block;
+  padding: 2px;
+  font-size: 20px;
+}/*# sourceMappingURL=About.css.map */
