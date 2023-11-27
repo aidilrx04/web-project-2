@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+
+    <!-- <link rel="stylesheet" href="./assets/css/carousel.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" /> -->
+
+    <script src="./assets/jquery/jquery-1.11.1.min.js"></script>
+    <script src="./assets/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- <script src="./assets/js/carousel.js"></script> -->
+  </head>
+<body>
+
+    <!-- Page: Pulau Langkawi Info -->
+    <div data-role="page" id="info">
+
+        <div data-role="header">
+            <h1></h1>
+        </div>
+
+        <div class="content" data-role="content">
+
+            <!-- Name and Price Section -->
+            <div class="header" data-role="collapsible">
+                <p>Pulau Perhatian</p>
+                <p2>Price: RM 5 - 30</p2>
+            </div>
+
+            <!-- Description 1 Section -->
+            <div class="description" data-role="collapsible">
+                <p> The Perhentian Islands (Malay: Kepulauan Perhentian) are islands in Besut District, Terengganu, Malaysia.
+
+                    The two main islands are Perhentian Besar ("Greater Perhentian") and Perhentian Kecil ("Lesser Perhentian"). The small, uninhabited islands of Susu Dara (Virgin Milk), Serengeh and Rawa, lie off Kecil. Like Besut, people generally speak Kelantanese Malay. However, English is also widely spoken.</p>
+                <p> </p>
+                <img src="data:image/jpeg;base64,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" alt="Picture 1">
+            </div>
+
+            <!-- Description 2 Section -->
+            <div class="description" data-role="collapsible">
+                <p>Snorkeling is one of the best things to do on the Perhentian Islands. Both islands Kecil and Besar have some great snorkeling spots. If you don’t scuba dive snorkeling is a great way to see the beautiful coral reef and abundant marine life of the islands. You can snorkel from the beach or do a boat snorkeling trip with stops at the best spots. The tour price includes masks and fins. You can rent a mask and fins on the beach for MYR5/US$1,2 for the day. Snorkeling was very good just wear a rash vest or put on a lot of sunscreens. Don’t swim out too far from the shore or buoys, boat traffic can be quite hectic during the peak season.
+
+                </p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBVVUJeU8NQxkzf9PJrFwkQdpEGgYAiVM4YQ&usqp=CAU" alt="Picture 2">
+            </div>
+
+            <!-- Location with Google Map Section -->
+            <div class="location" data-role="collapsible">
+                <p>Location:
+                    Pulau Redang, 21090 Kuala Terengganu, Terengganu
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63497.87850949793!2d102.70679505064145!3d5.909229483079378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6c101aced7741%3A0x82bc3dbe074ed77a!2sPerhentian%20Islands!5e0!3m2!1sen!2smy!4v1701098339162!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+
+    </div>
+
+</body>
+</html>
