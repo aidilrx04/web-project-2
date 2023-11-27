@@ -1,0 +1,38 @@
+.content{
+    .header{
+      text-align: center;
+      p{
+        font-size: 24px;
+        font-weight: bold;
+      }
+      p2{
+        font-size: 20px;
+      }
+    
+    }
+
+    .description{
+       
+        p{
+            text-align: justify;
+            font-size: 16px;
+        }
+        img{
+            max-width: 100%;
+            width: 100%;
+            background-attachment: fixed;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+      }
+
+    .location{
+        text-align: center;
+        iframe{
+            position: relative;
+            max-width: 100%;
+        }
+    }
+  }
