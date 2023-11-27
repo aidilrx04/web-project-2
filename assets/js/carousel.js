@@ -1,31 +1,10 @@
 $(document).ready(function () {
-  var currentIndex = 0;
-  var items = $(".slide");
-  var totalItems = items.length;
-
-  $(".next").on("click", function () {
-    if (currentIndex < totalItems - 1) {
-      currentIndex++;
-    } else {
-      currentIndex = 0;
-    }
-    updateCarousel();
+  $("#main-carousel").slick({
+    easing: "ease-in-out",
+    prevArrow: `<button class="prev"><i class="ph ph-caret-left"></i></button>`,
+    nextArrow: `<button class="next"><i class="ph ph-caret-right"></i></button>`,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
   });
-
-  $(".prev").on("click", function () {
-    if (currentIndex > 0) {
-      currentIndex--;
-    } else {
-      currentIndex = totalItems - 1;
-    }
-    updateCarousel();
-  });
-
-  function updateCarousel() {
-    var newTransformValue = -currentIndex * 100 + "%";
-    $(".carousel-container").css(
-      "transform",
-      "translateX(" + newTransformValue + ")"
-    );
-  }
 });

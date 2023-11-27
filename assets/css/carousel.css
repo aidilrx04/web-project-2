@@ -1,19 +1,33 @@
-* {
-  box-sizing: border-box;
-}
-
 .carousel {
   width: 100%;
-  overflow: hidden;
+  aspect-ratio: 16/9;
+  position: relative;
+  z-index: 2;
 }
-.carousel .carousel-container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.carousel .carousel-container .slide {
+.carousel .carousel-cell {
+  height: 100%;
   width: 100%;
-  flex: 0 0 auto;
-  padding: 20px;
-  text-align: center;
-  color: black;
+}
+.carousel .carousel-cell img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.carousel .prev,
+.carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  font-size: 18px;
+  border: 0;
+  z-index: 20;
+}
+.carousel .prev {
+  left: 0;
+}
+.carousel .next {
+  right: 0;
 }

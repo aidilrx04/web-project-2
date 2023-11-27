@@ -11,13 +11,29 @@
       rel="stylesheet"
       href="./assets/jquery-mobile/jquery.mobile-1.4.5.min.css"
     />
+    <!-- <link rel="stylesheet" href="./assets/flickity/flickity.min.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
     <link rel="stylesheet" href="./assets/css/carousel.css" />
     <link rel="stylesheet" href="./assets/css/nav.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/homepage.css" />
 
     <script src="./assets/jquery/jquery-1.11.1.min.js"></script>
     <script src="./assets/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <script src="./assets/flickity/flickity.pkgd.min.js"></script>
+    <script
+      src="./assets/flickity/flickity-responsive.module.js"
+      type="module"
+    ></script> -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <script src="./assets/js/carousel.js"></script>
   </head>
@@ -110,8 +126,6 @@
         </div>
         <script>
           $(document).ready(function () {
-            const navbarDropdown = $(".ll-navbar .collapsible");
-
             $(".togglenav").click(function () {
               $(".ll-navbar").toggleClass("show");
             });
@@ -120,15 +134,42 @@
             });
           });
         </script>
-        <div class="carousel">
-          <div class="carousel-container">
-            <div class="slide">Item 1</div>
-            <div class="slide">Item 2</div>
-            <div class="slide">Item 3</div>
-          </div>
 
-          <button class="prev">Preview</button>
-          <button class="next">Next</button>
+        <div id="main-carousel" class="carousel">
+          <div class="carousel-cell">
+            <img src="./assets/images/pangkor.jpg" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./assets/images/tioman.jpg" alt="" />
+          </div>
+          <div class="carousel-cell">
+            <img src="./assets/images/semporna.webp" alt="" />
+          </div>
+        </div>
+
+        <div class="description">
+          <h1>Lim Botak Travel Agency</h1>
+
+          <p>
+            Explore paradise with our Island Travel Agency. Tailored getaways,
+            pristine beaches, and unforgettable experiences await. Your dream
+            island escape starts now!
+          </p>
+        </div>
+
+        <div id="destinations">
+          <h2>Heres what we provide</h2>
+          <div class="destinations">
+            <div class="destination">
+              <img src="./assets/images/pangkor.jpg" alt="" />
+            </div>
+            <div class="destination">
+              <img src="./assets/images/semporna.webp" alt="" />
+            </div>
+            <div class="destination">
+              <img src="./assets/images/tioman.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
       <!-- Footer -->
