@@ -25,11 +25,6 @@
 
     <script src="./assets/jquery/jquery-1.11.1.min.js"></script>
     <script src="./assets/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
-    <!-- <script src="./assets/flickity/flickity.pkgd.min.js"></script>
-    <script
-      src="./assets/flickity/flickity-responsive.module.js"
-      type="module"
-    ></script> -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
@@ -38,7 +33,7 @@
     <script src="./assets/js/carousel.js"></script>
   </head>
   <body>
-    <div data-role="page">
+    <div data-role="page" id="index">
       <div data-role="header">
         <button class="ui-btn-left ui-noboxshadow togglenav">
           <i class="ph ph-list"></i>
@@ -48,7 +43,7 @@
           <i class="ph ph-envelope"></i>
         </button>
       </div>
-      <div role="main" style="position: relative">
+      <div role="main" class="ui-content" style="position: relative">
         <div class="ll-navbar">
           <div class="navbar-bg"></div>
 
@@ -82,9 +77,9 @@
                     </h4>
                     <ul>
                       <li>
-                        <a href="#destination1">
+                        <a href="Pulau-Pangkor.html" data-transition="slide">
                           <i class="ph ph-push-pin"></i>
-                          <span>Destionation 1</span>
+                          <span>Pulau Pangkor</span>
                         </a>
                       </li>
                       <li>
@@ -136,38 +131,122 @@
         </script>
 
         <div id="main-carousel" class="carousel">
-          <div class="carousel-cell">
-            <img src="./assets/images/pangkor.jpg" alt="" />
-          </div>
-          <div class="carousel-cell">
-            <img src="./assets/images/tioman.jpg" alt="" />
-          </div>
-          <div class="carousel-cell">
-            <img src="./assets/images/semporna.webp" alt="" />
-          </div>
+          <a
+            href="Pulau-Langkawi.html"
+            data-transition="slide"
+            class="carousel-cell"
+          >
+            <div class="content">
+              <img src="./assets/Image/Langkawi-Carousel.jpg" alt="" />
+
+              <div class="caption">
+                <h4 class="title">Langkawi Island</h4>
+                <p class="subtitle">
+                  Malaysia's largest duty-free island, beckons tourists with its
+                  natural beauty and history since 1987.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="Pulau-Pangkor.html"
+            data-transition="slide"
+            class="carousel-cell"
+          >
+            <div class="content">
+              <img src="./assets/Image/Pangkor-Carousel.jpg" alt="" />
+              <div class="caption">
+                <h4 class="title">Pangkor Island</h4>
+                <p class="subtitle">
+                  Living near Pulau Pangkor in Perak, Malaysia—a "Beautiful
+                  Island"—brings sheer bliss!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="Pulau-Perhentian.html"
+            data-transition="slide"
+            class="carousel-cell"
+          >
+            <div class="content">
+              <img src="./assets/Image/Perhentian-Carousel.webp" alt="" />
+
+              <div class="caption">
+                <h4 class="title">Perhentian Island</h4>
+                <p class="subtitle">
+                  Turquoise Waters and Tropical Bliss: Perhentian Islands Await
+                  Your Escape
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="Pulau-Redang.html"
+            data-transition="slide"
+            class="carousel-cell"
+          >
+            <div class="content">
+              <img src="./assets/Image/Redang-Carousel.jpeg" alt="" />
+
+              <div class="caption">
+                <h4 class="title">Redang Island</h4>
+                <p class="subtitle">
+                  Crimson Shores and Azure Dreams: Unveiling the Beauty of
+                  Redang Island
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
 
-        <div class="description">
-          <h1>Lim Botak Travel Agency</h1>
+        <div class="main-content">
+          <div class="description">
+            <h1>Lim Botak Travel Agency</h1>
 
-          <p>
-            Explore paradise with our Island Travel Agency. Tailored getaways,
-            pristine beaches, and unforgettable experiences await. Your dream
-            island escape starts now!
-          </p>
-        </div>
+            <p>
+              Explore paradise with our Island Travel Agency. Tailored getaways,
+              pristine beaches, and unforgettable experiences await. Your dream
+              island escape starts now!
+            </p>
+          </div>
 
-        <div id="destinations">
-          <h2>Heres what we provide</h2>
-          <div class="destinations">
-            <div class="destination">
-              <img src="./assets/images/pangkor.jpg" alt="" />
-            </div>
-            <div class="destination">
-              <img src="./assets/images/semporna.webp" alt="" />
-            </div>
-            <div class="destination">
-              <img src="./assets/images/tioman.jpg" alt="" />
+          <div id="destinations">
+            <h2>Checkout these popular destinations</h2>
+            <div class="destinations">
+              <a
+                data-transition="slide"
+                href="Pulau-Langkawi.html"
+                class="destination"
+              >
+                <img src="./assets/images/pangkor.jpg" alt="" />
+                <span class="title">Langkawi Island</span>
+              </a>
+              <a
+                data-transition="slide"
+                href="Pulau-Pangkor.html"
+                class="destination"
+              >
+                <img src="./assets/images/semporna.webp" alt="" />
+                <span class="title">Pangkor Island</span>
+              </a>
+              <a
+                data-transition="slide"
+                href="Pulau-Perhentian.html"
+                class="destination"
+              >
+                <img src="./assets/images/tioman.jpg" alt="" />
+                <span class="title">Perhentian Island</span>
+              </a>
+              <a
+                data-transition="slide"
+                href="Pulau-Redang.html"
+                class="destination"
+              >
+                <img src="./assets/Image/Redang1.jfif" alt="" />
+                <span class="title">Redang Island</span>
+              </a>
             </div>
           </div>
         </div>

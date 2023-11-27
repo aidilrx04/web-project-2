@@ -4,9 +4,21 @@
   box-sizing: border-box;
 }
 
+.ui-content {
+  padding: 0;
+}
+
+.main-content {
+  padding: 1rem;
+}
+.main-content * {
+  text-shadow: none;
+}
+
 .description {
   padding: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 68px;
+  margin-top: 64px;
 }
 .description h1 {
   color: #2563eb;
@@ -15,23 +27,48 @@
 }
 .description p {
   text-align: center;
-  font-style: italic;
 }
 
-.destinations {
+#destinations h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+#destinations .destinations {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
   padding: 20px;
 }
-.destinations .destination {
+#destinations .destinations .destination {
   width: 100%;
   aspect-ratio: 4/3;
   overflow: hidden;
+  position: relative;
+  color: white;
 }
-.destinations .destination img {
-  max-width: 100%;
+#destinations .destinations .destination:hover img {
+  filter: blur(3px) brightness(80%);
+  transition: filter 0.5s ease-in-out;
+}
+#destinations .destinations .destination:hover .title {
+  opacity: 1;
+  top: 50%;
+}
+#destinations .destinations .destination img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#destinations .destinations .destination .title {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, top 0.25s ease-in-out;
 }
