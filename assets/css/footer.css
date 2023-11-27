@@ -1,6 +1,11 @@
 footer,
 .footer {
+  z-index: 1 !important;
   background-color: #ad8451 !important;
+}
+footer.ui-footer,
+.footer.ui-footer {
+  position: static;
 }
 footer .socials,
 .footer .socials {
