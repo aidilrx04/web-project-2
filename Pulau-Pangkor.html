@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+
+    <!-- <link rel="stylesheet" href="./assets/css/carousel.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" /> -->
+
+    <script src="./assets/jquery/jquery-1.11.1.min.js"></script>
+    <script src="./assets/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- <script src="./assets/js/carousel.js"></script> -->
+  </head>
+<body>
+
+    <!-- Page: Pulau Langkawi Info -->
+    <div data-role="page" id="info">
+
+        <div data-role="header">
+            <h1></h1>
+        </div>
+
+        <div class="content" data-role="content">
+
+            <!-- Name and Price Section -->
+            <div class="header" data-role="collapsible">
+                <p>Pulau Pangkor</p>
+                <p2>Price: RM 10 - 20</p2>
+            </div>
+
+            <!-- Description 1 Section -->
+            <div class="description" data-role="collapsible">
+                <p> It's a bliss to live almost next door to Pulau Pangkor in the Malaysian state of Perak!  The island's name is translated as "Beautiful Island".
+
+                    It is located on the west coast of the Malaysian Peninsular, halfway in between Penang and Kuala Lumpur.
+                    
+                    Some of my friends say I live on paradise island when they see my pictures. And that is how I feel about it too!</p>
+                <p> </p>
+                <img src="data:image/jpeg;base64,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" alt="Picture 1">
+            </div>
+
+            <!-- Description 2 Section -->
+            <div class="description" data-role="collapsible">
+                <p>Teluk Nipah adalah sebuah teluk yang terletak di sebelah utara Pulau Pangkor. Teluk ini mempunyai pantai yang indah dan bersih. Anda boleh menikmati pemandangan laut yang tenang dan hijau dari pantai ini. Anda juga boleh melihat dua pulau kecil, iaitu Pulau Giam dan Pulau Mentagor, dari pantai ini. Anda boleh berkayak atau menaiki bot ke pulau-pulau tersebut untuk bersnorkeling atau melihat burung enggang.
+
+                </p>
+                <img src="https://trahkino.cc/contents/videos_screenshots/119000/119177/preview.mp4.jpg" alt="Picture 2">
+            </div>
+
+            <!-- Location with Google Map Section -->
+            <div class="location" data-role="collapsible">
+                <p>Location:
+                    Langkawi, 07000 Langkawi, Kedah
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63663.438649143565!2d100.5178970976779!3d4.227100461115895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3034d396cbb7f341%3A0xc8f2ba9f74ec3895!2sPangkor%20Island!5e0!3m2!1sen!2smy!4v1701096447811!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

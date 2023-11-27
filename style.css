@@ -1,0 +1,29 @@
+.content .header {
+  text-align: center;
+}
+.content .header p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.content .header p2 {
+  font-size: 20px;
+}
+.content .description p {
+  text-align: justify;
+  font-size: 16px;
+}
+.content .description img {
+  max-width: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content .location {
+  text-align: center;
+}
+.content .location iframe {
+  position: relative;
+  max-width: 100%;
+}/*# sourceMappingURL=style.css.map */
