@@ -5,41 +5,39 @@
 }
 
 /* Body Styling */
-.about-page {
+.about-content {
   background-color: #d1d3c7;
   font-family: "Spartan";
   padding: 10px;
   background-color: #e1e3d6;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
   display: grid;
   align-items: center;
   justify-items: center;
   color: black;
 }
-.about-page .title {
+.about-content .title {
   color: #2563eb;
   font-size: 32px;
   font-weight: bold;
   text-align: center;
   margin-top: 32px;
 }
-.about-page img {
+.about-content img {
   max-width: 100%;
   width: 100%;
 }
-.about-page p {
+.about-content p {
   padding-top: 40px;
   text-align: justify;
   font-size: 20px;
 }
-.about-page .contact-detail {
+.about-content .contact-detail {
   padding-top: 20px;
   padding: 20px;
   border-top: 1px solid black;
 }
-.about-page .contact-detail span {
+.about-content .contact-detail span {
   text-align: justify;
   display: block;
   padding: 2px;
