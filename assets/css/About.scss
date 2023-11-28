@@ -18,19 +18,15 @@
   justify-items: center;
   color: black;
 
-  .header h1 {
-    padding: 15px;
+  .title {
+    color: #2563eb;
+    font-size: 32px;
+    font-weight: bold;
     text-align: center;
-    color: #000;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: underline;
+    margin-top: 32px;
   }
 
-  img{
+  img {
     max-width: 100%;
     width: 100%;
   }

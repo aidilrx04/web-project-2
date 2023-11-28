@@ -18,16 +18,12 @@
   justify-items: center;
   color: black;
 }
-.about-page .header h1 {
-  padding: 15px;
+.about-page .title {
+  color: #2563eb;
+  font-size: 32px;
+  font-weight: bold;
   text-align: center;
-  color: #000;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: underline;
+  margin-top: 32px;
 }
 .about-page img {
   max-width: 100%;
@@ -48,4 +44,4 @@
   display: block;
   padding: 2px;
   font-size: 20px;
-}/*# sourceMappingURL=About.css.map */
+}
