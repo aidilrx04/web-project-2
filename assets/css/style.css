@@ -1,16 +1,19 @@
 .content .header {
   text-align: center;
+  margin: 30px 0;
 }
-.content .header p {
+.content .header h1 {
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
-.content .header p2 {
+.content .header p {
   font-size: 20px;
 }
 .content .description p {
   text-align: justify;
   font-size: 16px;
+  margin-bottom: 30px;
 }
 .content .description img {
   max-width: 100%;
@@ -26,4 +29,4 @@
 .content .location iframe {
   position: relative;
   max-width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
