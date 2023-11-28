@@ -38,7 +38,6 @@
 #destinations .destinations {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
   padding: 20px;
 }
 #destinations .destinations .destination {
@@ -61,6 +60,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: blur(0px) brightness(80%);
 }
 #destinations .destinations .destination .title {
   position: absolute;
@@ -71,6 +71,17 @@
   width: 100%;
   text-align: center;
   font-weight: normal;
-  opacity: 0;
   transition: opacity 0.5s ease-in-out, top 0.25s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  #destinations .destinations {
+    grid-template-columns: 1fr 1fr;
+  }
+  #destinations .destinations img {
+    filter: blur(0px) brightness(100%);
+  }
+  #destinations .destinations .title {
+    opacity: 0;
+  }
 }
