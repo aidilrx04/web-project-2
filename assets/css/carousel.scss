@@ -3,6 +3,7 @@
   aspect-ratio: 16 / 9;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 
   .carousel-cell {
     height: 100%;
