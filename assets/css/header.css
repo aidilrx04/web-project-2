@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header[data-role=header] {
+  background-color: #ad8451;
+}
+.header[data-role=header] * {
+  text-shadow: none;
+  box-shadow: none;
+}
+.header[data-role=header].destination-header .ui-btn {
+  color: white;
+  gap: 4px;
+}
+.header[data-role=header] .ui-btn {
+  box-shadow: none;
+  color: black;
+  background-color: transparent;
+  border: 0;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header[data-role=header] .ui-btn i {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+}
