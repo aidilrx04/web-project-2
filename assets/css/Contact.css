@@ -17,6 +17,19 @@
 }
 
 /* Body Styling */
+.contact-page {
+  background: url("https://xgifer.com/content/2022/11/blowjob_001-12.gif") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: var(--font-size);
+  font-family: var(--font-face);
+  color: var(--font-color);
+}
+
 .header.contact-header h1 {
   text-align: center;
   color: #000;
@@ -105,4 +118,4 @@ textarea:focus {
 /* Textarea Styling */
 textarea {
   resize: none;
-}
+}/*# sourceMappingURL=Contact.css.map */
