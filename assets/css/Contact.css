@@ -18,7 +18,6 @@
 
 /* Body Styling */
 .contact-page {
-  background: url("https://xgifer.com/content/2022/11/blowjob_001-12.gif") center center no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -28,52 +27,50 @@
   font-size: var(--font-size);
   font-family: var(--font-face);
   color: var(--font-color);
+  /* Form Styling */
+  /* Form Element Styling */
+  /* Heading Styling */
+  /* Button Styling */
+  /* Button Hover Styling */
+  /* Input and Textarea Styling */
+  /* Input and Textarea Focus Styling */
+  /* Textarea Styling */
 }
-
-.header.contact-header h1 {
-  text-align: center;
-  color: #000;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: underline;
-}
-
-/* Form Styling */
-.contact-us {
+.contact-page .contact-us {
   background: var(--form-bg);
   padding: 20px; /* Adjusted padding for smaller screens */
   border-top: 5px solid var(--form-border);
 }
-
-/* Form Element Styling */
-label,
-input,
-textarea {
+.contact-page .ui-input-text {
+  background-color: transparent;
+  border: 0;
+}
+.contact-page .title {
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+}
+.contact-page label,
+.contact-page input,
+.contact-page textarea {
   display: block;
   width: 100%;
   font-size: var(--font-size);
   line-height: calc(var(--font-size) * 2);
   font-family: var(--font-face);
 }
-
-input {
+.contact-page input {
   margin-bottom: calc(var(--font-size) * 1); /* Adjusted margin for smaller screens */
 }
-
-/* Heading Styling */
-h3 {
+.contact-page h3 {
   font-weight: normal;
   font-size: 10pt;
   line-height: calc(var(--font-size) * 2);
   font-style: italic;
   margin: 0 0 0.5em 0;
 }
-
-/* Button Styling */
-button {
+.contact-page button {
   display: block;
   margin-top: 10px; /* Adjusted margin for smaller screens */
   line-height: calc(var(--font-size) * 2);
@@ -86,21 +83,16 @@ button {
   border-bottom: 2px solid transparent;
   outline: none;
 }
-
-button i {
+.contact-page button i {
   margin-right: 5px;
 }
-
-/* Button Hover Styling */
-button:hover {
+.contact-page button:hover {
   background: inherit;
   color: var(--form-border);
   border-bottom: 2px solid var(--form-border);
 }
-
-/* Input and Textarea Styling */
-input,
-textarea {
+.contact-page input,
+.contact-page textarea {
   border: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
@@ -108,14 +100,10 @@ textarea {
   padding-left: 5px;
   outline: none;
 }
-
-/* Input and Textarea Focus Styling */
-input:focus,
-textarea:focus {
+.contact-page input:focus,
+.contact-page textarea:focus {
   border: 1px solid var(--form-focus);
 }
-
-/* Textarea Styling */
-textarea {
+.contact-page textarea {
   resize: none;
-}/*# sourceMappingURL=Contact.css.map */
+}

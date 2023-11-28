@@ -35,11 +35,25 @@
   </head>
   <body>
     <div class="contact-page" data-role="page">
-      <div class="header contact-header" data-role="header">
-        <h1>CONTACT</h1>
+      <div
+        data-role="header"
+        data-position="fixed"
+        class="header destination-header"
+      >
+        <a
+          class="header-btn ui-btn ui-btn-left"
+          href="index.html"
+          data-rel="back"
+        >
+          <i class="ph ph-house"></i>
+          <span> Home </span>
+        </a>
+        <h1 class="ui-title">Contact Us</h1>
       </div>
-      <div data-role="content">
-        <form id="contactForm" action="homepage.html" method="POST">
+      <div role="main" class="ui-content">
+        <h1 class="title">Your suggestions are welcome here!!</h1>
+
+        <form id="contactForm" class="contact-us" action="index.html">
           <label for="customerName">NAME <em>&#x2a;</em></label>
           <input type="text" id="customerName" name="customerName" required />
 
@@ -60,7 +74,7 @@
             required
           />
 
-          <label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label>
+          <label for="customerNote">COMMENT/SUGGESTION <em>&#x2a;</em></label>
           <textarea
             rows="4"
             id="customerNote"
@@ -68,7 +82,7 @@
             required
           ></textarea>
 
-          <h3>Please provide all the information about your issue you can.</h3>
+          <h3>Please provide all the information.</h3>
 
           <button type="submit" id="customerOrder">
             <i class="ph ph-paper-plane-tilt"></i>SUBMIT
@@ -90,7 +104,7 @@
           var form = $("#contactForm");
 
           if (form[0].checkValidity()) {
-            alert("Form submitted successfully!");
+            alert("Already Submitted!");
           } else {
             alert("Please fill out all required fields correctly.");
           }

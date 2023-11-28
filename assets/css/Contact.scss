@@ -18,107 +18,106 @@
 }
 
 /* Body Styling */
- .contact-page {
-   background: url("https://xgifer.com/content/2022/11/blowjob_001-12.gif") center center no-repeat;
-   background-size: cover;
-   width: 100vw;
-   height: 100vh;
-   display: grid;
-   align-items: center;
-   justify-items: center;
-   font-size: var(--font-size);
-   font-family: var(--font-face);
-   color: var(--font-color);
- }
-
-.header.contact-header {
-  h1 {
-    text-align: center;
-    color: #000;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: underline;
-  }
-}
-/* Form Styling */
-.contact-us {
-  background: var(--form-bg);
-  padding: 20px; /* Adjusted padding for smaller screens */
-  border-top: 5px solid var(--form-border);
-}
-
-/* Form Element Styling */
-label,
-input,
-textarea {
-  display: block;
-  width: 100%;
+.contact-page {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
   font-size: var(--font-size);
-  line-height: calc(var(--font-size) * 2);
   font-family: var(--font-face);
-}
+  color: var(--font-color);
 
-input {
-  margin-bottom: calc(
-    var(--font-size) * 1
-  ); /* Adjusted margin for smaller screens */
-}
+  /* Form Styling */
+  .contact-us {
+    background: var(--form-bg);
+    padding: 20px; /* Adjusted padding for smaller screens */
+    border-top: 5px solid var(--form-border);
+  }
 
-/* Heading Styling */
-h3 {
-  font-weight: normal;
-  font-size: 10pt;
-  line-height: calc(var(--font-size) * 2);
-  font-style: italic;
-  margin: 0 0 0.5em 0;
-}
+  .ui-input-text {
+    background-color: transparent;
+    border: 0;
+  }
 
-/* Button Styling */
-button {
-  display: block;
-  margin-top: 10px; /* Adjusted margin for smaller screens */
-  line-height: calc(var(--font-size) * 2);
-  padding: 0 10px; /* Adjusted padding for smaller screens */
-  border: none;
-  background: var(--form-border);
-  color: white;
-  letter-spacing: 2px;
-  transition: 0.2s all ease-in-out;
-  border-bottom: 2px solid transparent;
-  outline: none;
-}
+  .title {
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+  }
 
-button i {
-  margin-right: 5px;
-}
-/* Button Hover Styling */
-button:hover {
-  background: inherit;
-  color: var(--form-border);
-  border-bottom: 2px solid var(--form-border);
-}
+  /* Form Element Styling */
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    font-size: var(--font-size);
+    line-height: calc(var(--font-size) * 2);
+    font-family: var(--font-face);
+  }
 
-/* Input and Textarea Styling */
-input,
-textarea {
-  border: none;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
-  background: var(--form-bg);
-  padding-left: 5px;
-  outline: none;
-}
+  input {
+    margin-bottom: calc(
+      var(--font-size) * 1
+    ); /* Adjusted margin for smaller screens */
+  }
 
-/* Input and Textarea Focus Styling */
-input:focus,
-textarea:focus {
-  border: 1px solid var(--form-focus);
-}
+  /* Heading Styling */
+  h3 {
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: calc(var(--font-size) * 2);
+    font-style: italic;
+    margin: 0 0 0.5em 0;
+  }
 
-/* Textarea Styling */
-textarea {
-  resize: none;
+  /* Button Styling */
+  button {
+    display: block;
+    margin-top: 10px; /* Adjusted margin for smaller screens */
+    line-height: calc(var(--font-size) * 2);
+    padding: 0 10px; /* Adjusted padding for smaller screens */
+    border: none;
+    background: var(--form-border);
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    border-bottom: 2px solid transparent;
+    outline: none;
+  }
+
+  button i {
+    margin-right: 5px;
+  }
+  /* Button Hover Styling */
+  button:hover {
+    background: inherit;
+    color: var(--form-border);
+    border-bottom: 2px solid var(--form-border);
+  }
+
+  /* Input and Textarea Styling */
+  input,
+  textarea {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background: var(--form-bg);
+    padding-left: 5px;
+    outline: none;
+  }
+
+  /* Input and Textarea Focus Styling */
+  input:focus,
+  textarea:focus {
+    border: 1px solid var(--form-focus);
+  }
+
+  /* Textarea Styling */
+  textarea {
+    resize: none;
+  }
 }
