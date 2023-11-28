@@ -53,7 +53,23 @@
       <div role="main" class="ui-content">
         <h1 class="title">Your suggestions are welcome here!!</h1>
 
-        <form id="contactForm" class="contact-us" action="index.html">
+        <form id="contactForm" class="contact-us">
+          <script>
+            console.log("This is called");
+            $("#contactForm").on("submit", function (e) {
+              e.preventDefault();
+              console.log("form submitted");
+              if (this.checkValidity()) {
+                alert("Already Submitted!");
+              } else {
+                alert("Please fill out all required fields correctly.");
+              }
+            });
+
+            function resetForm() {
+              $("#contactForm")[0].reset();
+            }
+          </script>
           <label for="customerName">NAME <em>&#x2a;</em></label>
           <input type="text" id="customerName" name="customerName" required />
 
@@ -122,22 +138,6 @@
       <!-- End Footer -->
     </div>
 
-    <script>
-      $(document).on("pagecreate", function () {
-        $("#customerOrder").on("click", function () {
-          var form = $("#contactForm");
-
-          if (form[0].checkValidity()) {
-            alert("Already Submitted!");
-          } else {
-            alert("Please fill out all required fields correctly.");
-          }
-        });
-
-        function resetForm() {
-          $("#contactForm")[0].reset();
-        }
-      });
-    </script>
+    <script></script>
   </body>
 </html>
