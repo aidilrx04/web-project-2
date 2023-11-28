@@ -37,8 +37,28 @@
   <body>
     <!-- Page: Pulau Langkawi Info -->
     <div data-role="page" id="info">
-      <div data-role="header">
-        <h1></h1>
+      <div
+        data-role="header"
+        data-position="fixed"
+        class="header destination-header"
+      >
+        <a
+          class="header-btn ui-btn ui-btn-left"
+          href="index.html"
+          data-rel="back"
+        >
+          <i class="ph ph-house"></i>
+          <span> Home </span>
+        </a>
+        <h1 class="ui-title">Langkawi Island</h1>
+        <a
+          href="#book"
+          class="ui-btn ui-btn-right"
+          onclick="alert('Thank you for booking. We will contact the details to you later')"
+        >
+          <i class="ph ph-book"></i>
+          <span>Book Now</span>
+        </a>
       </div>
 
       <div class="content ui-content" data-role="main">
