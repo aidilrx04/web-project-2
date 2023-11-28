@@ -42,8 +42,26 @@
     left: -100%;
     top: 0;
     background-color: #d1d3c7;
-
     transition: left 0.25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+
+    .close {
+      background-color: #c49861;
+      padding: 0 8px;
+
+      button {
+        text-shadow: none;
+        border: 0;
+        width: auto;
+        background-color: transparent;
+        padding: 8px;
+        color: white;
+        border: 0;
+        box-shadow: none;
+        font-size: 24px;
+      }
+    }
 
     .brand {
       display: flex;
@@ -56,7 +74,7 @@
       padding: 20px;
 
       img {
-        width: 100px;
+        width: 200px;
       }
 
       .brand-name {
@@ -67,6 +85,8 @@
     }
 
     .navigation-menu {
+      height: 100%;
+      overflow: auto;
       .nav {
         list-style: none;
         padding: 0;
