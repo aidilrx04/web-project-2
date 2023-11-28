@@ -11,15 +11,19 @@
       rel="stylesheet"
       href="./style.css"
     />
-
-    <!-- <link rel="stylesheet" href="./assets/css/carousel.css" />
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
     <link rel="stylesheet" href="./assets/css/nav.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" /> -->
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/homepage.css" />
 
     <script src="./assets/jquery/jquery-1.11.1.min.js"></script>
     <script src="./assets/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-    <!-- <script src="./assets/js/carousel.js"></script> -->
+    <script src="./assets/js/carousel.js"></script>
   </head>
 <body>
 
@@ -30,23 +34,23 @@
             <h1></h1>
         </div>
 
-        <div class="content" data-role="content">
+        <div class="content ui-content" data-role="content">
 
             <!-- Name and Price Section -->
-            <div class="header" data-role="collapsible">
+            <div class="header">
                 <p>Pulau Redang</p>
-                <p2>Price: RM 35 - 80</p2>
+                <p>Price: RM 35 - 80</p>
             </div>
 
             <!-- Description 1 Section -->
-            <div class="description" data-role="collapsible">
+            <div class="description">
                 <p> Redang Island (Malay: Pulau Redang, Terengganu Malay: Pula Redang) is an island in Kuala Nerus District, Terengganu, Malaysia. It is one of the largest islands off the east coast of Peninsular Malaysia and as well as one of the most beautiful islands in the world. It is famous for its crystal clear waters and white sandy beaches. It is one of nine islands, which form a marine sanctuary park offering snorkeling and diving opportunities for tourists.</p>
                 <p> </p>
                 <img src="data:image/jpeg;base64,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" alt="Picture 1">
             </div>
 
             <!-- Description 2 Section -->
-            <div class="description" data-role="collapsible">
+            <div class="description" >
                 <p>Snorkelling trips are included in vacation packages offered by every single resort on Redang. These resorts also let their guests rent equipment for snorkelling such as life jackets, masks and snorkel, with the whole set costing around RM30 per stay. Snorkelling can be enjoyed by everyone – from children to the elderly and even those who do not know how to swim. Only a few things are required: a life jacket, mask, snorkel and the courage to jump into the crystal-clear waters! Powered masks and child-sized life jackets are available for rental, though these are only available in limited quantities. So, guests who are particular about hygiene as well as the fit of the life jackets may opt to bring along their own equipment instead.
 
                 </p>
@@ -54,7 +58,7 @@
             </div>
 
             <!-- Location with Google Map Section -->
-            <div class="location" data-role="collapsible">
+            <div class="location" >
                 <p>Location:
                     Pulau Redang, 21090 Kuala Terengganu, Terengganu
                 </p>

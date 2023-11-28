@@ -7,63 +7,98 @@
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
+    <link rel="stylesheet" href="./style.css" />
+
     <link
       rel="stylesheet"
-      href="./style.css"
+      href="./assets/jquery-mobile/jquery.mobile-1.4.5.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./assets/flickity/flickity.min.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
 
-    <!-- <link rel="stylesheet" href="./assets/css/carousel.css" />
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
     <link rel="stylesheet" href="./assets/css/nav.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" /> -->
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/homepage.css" />
 
     <script src="./assets/jquery/jquery-1.11.1.min.js"></script>
     <script src="./assets/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-    <!-- <script src="./assets/js/carousel.js"></script> -->
+    <script src="./assets/js/carousel.js"></script>
   </head>
-<body>
-
+  <body>
     <!-- Page: Pulau Langkawi Info -->
     <div data-role="page" id="info">
+      <div data-role="header">
+        <h1></h1>
+      </div>
 
-        <div data-role="header">
-            <h1></h1>
+      <div class="content ui-content" data-role="main">
+        <!-- Name and Price Section -->
+        <div class="header">
+          <p>Pulau Langkawi</p>
+          <p>Price: RM 13 - 60</p>
         </div>
 
-        <div class="content" data-role="content">
-
-            <!-- Name and Price Section -->
-            <div class="header" data-role="collapsible">
-                <p>Pulau Langkawi</p>
-                <p2>Price: RM 13 - 60</p2>
-            </div>
-
-            <!-- Description 1 Section -->
-            <div class="description" data-role="collapsible">
-                <p> Langkawi is one of the districts in the state of Kedah Darul Aman, Malaysia. The island was given duty-free status in 1987. Today, this island rich in natural beauty and legends of the past has presented itself as one of the most popular tourist destinations in Malaysia. Langkawi is a group of islands where Langkawi Island is the largest followed by Banggi Island and Penang Island.</p>
-                <p> </p>
-                <img src="data:image/jpeg;base64,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" alt="Picture 1">
-            </div>
-
-            <!-- Description 2 Section -->
-            <div class="description" data-role="collapsible">
-                <p>Black Sand Beach (Pantai Pasir Hitam) offers memorable photo opportunities and a peaceful retreat from Langkawi's busy beaches. It's just 4 kilometres southwest of Tanjung Rhu Beach, around a 20-minute drive from the Langkawi Cable Car. 
-
-                    Black Sand Beach is a popular hangout spot among locals, especially during weekends and public holidays. Despite its name, the beach is actually a mix of black and white sand. Some locals believe it to be the result of a centuries-old curse by a mermaid after a fisherman stole her ring. Others claim that it’s burned soil from rice paddy fields back in 1821.</p>
-                <img src="https://ei.phncdn.com/videos/202308/12/437265701/original/(m=qPU3UTYbeGNdHgaaaa)(mh=shYm1_IUNKjHSpWH)0.jpg" alt="Picture 2">
-            </div>
-
-            <!-- Location with Google Map Section -->
-            <div class="location" data-role="collapsible">
-                <p>Location:
-                    Langkawi, 07000 Langkawi, Kedah
-                </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31722.720432706912!2d99.77940035571294!3d6.3499994429424875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c78da69c4755d%3A0xe43971dbd7bd6dfe!2sLangkawi%2C%2007000%20Langkawi%2C%20Kedah!5e0!3m2!1sen!2smy!4v1701094069004!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
+        <!-- Description 1 Section -->
+        <div class="description">
+          <p>
+            Langkawi is one of the districts in the state of Kedah Darul Aman,
+            Malaysia. The island was given duty-free status in 1987. Today, this
+            island rich in natural beauty and legends of the past has presented
+            itself as one of the most popular tourist destinations in Malaysia.
+            Langkawi is a group of islands where Langkawi Island is the largest
+            followed by Banggi Island and Penang Island.
+          </p>
+          <p></p>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Picture 1"
+          />
         </div>
 
+        <!-- Description 2 Section -->
+        <div class="description">
+          <p>
+            Black Sand Beach (Pantai Pasir Hitam) offers memorable photo
+            opportunities and a peaceful retreat from Langkawi's busy beaches.
+            It's just 4 kilometres southwest of Tanjung Rhu Beach, around a
+            20-minute drive from the Langkawi Cable Car. Black Sand Beach is a
+            popular hangout spot among locals, especially during weekends and
+            public holidays. Despite its name, the beach is actually a mix of
+            black and white sand. Some locals believe it to be the result of a
+            centuries-old curse by a mermaid after a fisherman stole her ring.
+            Others claim that it’s burned soil from rice paddy fields back in
+            1821.
+          </p>
+          <img
+            src="https://ei.phncdn.com/videos/202308/12/437265701/original/(m=qPU3UTYbeGNdHgaaaa)(mh=shYm1_IUNKjHSpWH)0.jpg"
+            alt="Picture 2"
+          />
+        </div>
+
+        <!-- Location with Google Map Section -->
+        <div class="location" data-role="collapsible">
+          <p>Location: Langkawi, 07000 Langkawi, Kedah</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31722.720432706912!2d99.77940035571294!3d6.3499994429424875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304c78da69c4755d%3A0xe43971dbd7bd6dfe!2sLangkawi%2C%2007000%20Langkawi%2C%20Kedah!5e0!3m2!1sen!2smy!4v1701094069004!5m2!1sen!2smy"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
