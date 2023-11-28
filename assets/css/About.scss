@@ -5,7 +5,7 @@
 }
 
 /* Body Styling */
-.content.about-page {
+.about-page {
   background-color: #d1d3c7;
   font-family: "Spartan";
   padding: 10px;
@@ -30,6 +30,11 @@
     text-decoration: underline;
   }
 
+  img{
+    max-width: 100%;
+    width: 100%;
+  }
+
   p {
     padding-top: 40px;
     text-align: justify;
@@ -42,6 +47,7 @@
     border-top: 1px solid black;
 
     span {
+      text-align: justify;
       display: block;
       padding: 2px;
       font-size: 20px;
