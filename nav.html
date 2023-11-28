@@ -56,40 +56,40 @@
             </h4>
             <ul>
               <li>
-                <a href="#destination1">
+                <a href="Pulau-Langkawi.html" data-transition="slide">
                   <i class="ph ph-push-pin"></i>
-                  <span>Destionation 1</span>
+                  <span>Langkawi Island</span>
                 </a>
               </li>
               <li>
-                <a href="#destination1">
+                <a href="Pulau-Pangkor.html" data-transition="slide">
                   <i class="ph ph-push-pin"></i>
-                  <span>Destionation 1</span>
+                  <span>Pangkor Island</span>
                 </a>
               </li>
               <li>
-                <a href="#destination1">
+                <a href="Pulau-Perhentian.html" data-transition="slide">
                   <i class="ph ph-push-pin"></i>
-                  <span>Destionation 1</span>
+                  <span>Perhentian Island</span>
                 </a>
               </li>
               <li>
-                <a href="#destination1">
+                <a href="Pulau-Redang.html" data-transition="slide">
                   <i class="ph ph-push-pin"></i>
-                  <span>Destionation 1</span>
+                  <span>Redang Island</span>
                 </a>
               </li>
             </ul>
           </div>
         </li>
         <li>
-          <a href="#about">
+          <a href="About.html" data-transition="slide">
             <i class="ph ph-info"></i>
             <span>About Us</span>
           </a>
         </li>
         <li>
-          <a href="#contact">
+          <a href="Contact.html" data-transition="slide">
             <i class="ph ph-envelope"> </i>
             <span>Contact</span>
           </a>
@@ -97,18 +97,15 @@
       </ul>
     </div>
   </div>
+  <script>
+    $(document).ready(function () {
+      $(".togglenav").click(function () {
+        $(".ll-navbar").toggleClass("show");
+      });
+      $(".navbar-bg").click(function () {
+        $(".ll-navbar").toggleClass("show");
+      });
+    });
+  </script>
 </div>
-
-<script>
-  $(document).ready(function () {
-    const navbarDropdown = $(".ll-navbar .collapsible");
-
-    $(".togglenav").click(function () {
-      $(".ll-navbar").toggleClass("show");
-    });
-    $(".navbar-bg").click(function () {
-      $(".ll-navbar").toggleClass("show");
-    });
-  });
-</script>
 <!-- End include in <div role="main"> -->
