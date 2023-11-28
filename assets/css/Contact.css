@@ -7,7 +7,7 @@
   --form-focus: #6bd4b1;
   --font-size: 12pt;
   --font-face: "Spartan";
-  --font-color: #2A293E;
+  --font-color: #2a293e;
 }
 
 /* Reset */
@@ -17,20 +17,7 @@
 }
 
 /* Body Styling */
-body {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg") center center no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  font-size: var(--font-size);
-  font-family: var(--font-face);
-  color: var(--font-color);
-}
-
-.header h1 {
+.header.contact-header h1 {
   text-align: center;
   color: #000;
   font-family: Inter;
@@ -118,4 +105,4 @@ textarea:focus {
 /* Textarea Styling */
 textarea {
   resize: none;
-}/*# sourceMappingURL=Contact.css.map */
+}

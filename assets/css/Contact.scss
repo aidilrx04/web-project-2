@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 
 /* Variables */
 :root {
@@ -7,8 +7,8 @@
   --form-shadow: #dfae4b;
   --form-focus: #6bd4b1;
   --font-size: 12pt;
-  --font-face: 'Spartan';
-  --font-color: #2A293E;
+  --font-face: "Spartan";
+  --font-color: #2a293e;
 }
 
 /* Reset */
@@ -18,21 +18,21 @@
 }
 
 /* Body Styling */
-body {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg") center center no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  font-size: var(--font-size);
-  font-family: var(--font-face);
-  color: var(--font-color);
-}
+// body {
+//   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg") center center no-repeat;
+//   background-size: cover;
+//   width: 100vw;
+//   height: 100vh;
+//   display: grid;
+//   align-items: center;
+//   justify-items: center;
+//   font-size: var(--font-size);
+//   font-family: var(--font-face);
+//   color: var(--font-color);
+// }
 
-.header{
-    h1{
+.header.contact-header {
+  h1 {
     text-align: center;
     color: #000;
     font-family: Inter;
@@ -41,7 +41,7 @@ body {
     font-weight: 400;
     line-height: normal;
     text-decoration: underline;
-    }
+  }
 }
 /* Form Styling */
 .contact-us {
@@ -62,7 +62,9 @@ textarea {
 }
 
 input {
-  margin-bottom: calc(var(--font-size) * 1); /* Adjusted margin for smaller screens */
+  margin-bottom: calc(
+    var(--font-size) * 1
+  ); /* Adjusted margin for smaller screens */
 }
 
 /* Heading Styling */
@@ -71,7 +73,7 @@ h3 {
   font-size: 10pt;
   line-height: calc(var(--font-size) * 2);
   font-style: italic;
-  margin: 0 0 .5em 0;
+  margin: 0 0 0.5em 0;
 }
 
 /* Button Styling */
@@ -84,13 +86,13 @@ button {
   background: var(--form-border);
   color: white;
   letter-spacing: 2px;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   border-bottom: 2px solid transparent;
   outline: none;
 }
 
-button i{
-    margin-right:5px;
+button i {
+  margin-right: 5px;
 }
 /* Button Hover Styling */
 button:hover {
@@ -103,7 +105,7 @@ button:hover {
 input,
 textarea {
   border: none;
-  border: 1px solid rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   background: var(--form-bg);
   padding-left: 5px;

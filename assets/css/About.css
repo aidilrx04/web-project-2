@@ -5,23 +5,20 @@
 }
 
 /* Body Styling */
-body {
-  background-color: #D1D3C7;
+.content.about-page {
+  background-color: #d1d3c7;
+  font-family: "Spartan";
+  padding: 10px;
+  background-color: #e1e3d6;
   background-size: cover;
   width: 100vw;
   height: 100vh;
   display: grid;
   align-items: center;
   justify-items: center;
-  font-size: 12pt;
-  font-family: "Spartan";
   color: black;
 }
-body .content {
-  padding: 10px;
-  background-color: #E1E3D6;
-}
-body .content .header h1 {
+.content.about-page .header h1 {
   padding: 15px;
   text-align: center;
   color: #000;
@@ -32,18 +29,18 @@ body .content .header h1 {
   line-height: normal;
   text-decoration: underline;
 }
-body .content p {
+.content.about-page p {
   padding-top: 40px;
   text-align: justify;
   font-size: 20px;
 }
-body .content .contact-detail {
+.content.about-page .contact-detail {
   padding-top: 20px;
   padding: 20px;
   border-top: 1px solid black;
 }
-body .content .contact-detail span {
+.content.about-page .contact-detail span {
   display: block;
   padding: 2px;
   font-size: 20px;
-}/*# sourceMappingURL=About.css.map */
+}
